@@ -11,7 +11,7 @@ public class A1Novice {
 		// Your code follows here.
 		int customers = scan.nextInt();
 		double total = 0;
-		for (int trials = 0; trials <= customers; trials++) {
+		for (int trials = 0; trials < customers; trials++) {
 			String names = scan.next();
 			char F = names.charAt(0);
 		
