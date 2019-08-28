@@ -11,13 +11,14 @@ public class A1Adept {
 		// Your code follows here.
 		int count = scan.nextInt();
 		
-		for (i = 0, i < count, i++);
+		for (int i = 0; i < count; i++) {
 				// read all items, assign variable and price
 				String food = scan.next();
 				int price = scan.nextInt();
 				if food = scan.next(); {
 					int cus = price * scan.nextInt();
 					else { String food = scan.next();
+				}
 				}
 				// scan for next string, assign to variable, scan for variable
 				// multiply by that variable price per customer

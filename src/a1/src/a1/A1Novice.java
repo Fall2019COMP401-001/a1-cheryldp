@@ -10,23 +10,25 @@ public class A1Novice {
 
 		// Your code follows here.
 		int customers = scan.nextInt();
+		int total = 0;
 		for (int trials = 0; trials <= customers; trials++) {
 			String names = scan.next();
-			String F = names.charAt(0);
+			char F = names.charAt(0);
 		
 			String Last = scan.next();
 		
 			int count = scan.nextInt();
-				for (int i = 0; i <= count; i++ ) {
+				for (int i = 0; i < count; i++ ) {
 					int quantity = scan.nextInt();
-					int price = scan.nextInt();
-					int itemTotal = price * quantity;
-					int Total = itemTotal;
+					String skip = scan.next();
+					double price = scan.nextDouble();
+					double itemTotal = price * quantity;
+					total += itemTotal;
 		}
 		
 	
 		
-		System.out.println(F.  "+ " Last.  "+ " Total );
+		System.out.println( F + ". " + Last + " " + total);
 		}
 	}
 }
