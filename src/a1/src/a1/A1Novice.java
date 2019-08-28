@@ -29,7 +29,7 @@ public class A1Novice {
 		
 				String totalValue = String.format("%.2f", total);
 		
-		System.out.println( F + ". " + Last + " " + totalValue);
+		System.out.println( F + ". " + Last + ": " + totalValue);
 		}
 	}
 }
