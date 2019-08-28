@@ -10,8 +10,8 @@ public class A1Novice {
 
 		// Your code follows here.
 		int customers = scan.nextInt();
-		double total = 0;
 		for (int trials = 0; trials < customers; trials++) {
+			double total = 0;
 			String names = scan.next();
 			char F = names.charAt(0);
 		
@@ -24,6 +24,7 @@ public class A1Novice {
 					double price = scan.nextDouble();
 					double itemTotal = price * quantity;
 					total += itemTotal;
+					String.format("%.2f", total);
 		}
 		
 	
