@@ -54,13 +54,12 @@ public class A1Adept {
 			int idxMost = 0;
 			double most = totals[0];
 			for (int i = 0; i < customers; i ++) {
-				if (most >= totals[i]) {
-					 most = most;
-					 idxMost = 0;
-				} else {
+				if (most <= totals[i]) {
+					//when most doesnt change
+//					 most = most;
 					most = totals[i];
-					idxMost  = i;
-				}
+					idxMost = i;
+				} 
 			}
 			int idxLeast = 0;
 			double least = totals[0];
@@ -89,5 +88,6 @@ public class A1Adept {
 			System.out.println("Biggest: " + firstNames[idxMost] + " " + lastNames[idxMost] + " (" + formatMost + ")" );
 			System.out.println("Smallest: " + firstNames[idxLeast] + " " + lastNames[idxLeast] + " (" + formatLeast + ")" );
 			System.out.println("Average: " + avg);
+			System.out.println(idxMost);
 }
 }
