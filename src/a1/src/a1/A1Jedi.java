@@ -31,6 +31,7 @@ public class A1Jedi {
 			for(int c = 0; c < customers; c++) {
 			String name = scan.next() + scan.next();
 			int itemsPerCus = scan.nextInt();
+			int [] storage = new int [rows];
 			
 				for (int i = 0; i < itemsPerCus; i++) { //go through this loop 3 times
 				int quantity = scan.nextInt();
@@ -38,19 +39,21 @@ public class A1Jedi {
 				for (int count = 0; count < rows; count++) { //6 times per items bought
 				if (food.equals(groceries[count])) {
 					purchased[count] += quantity;
-					cusBought[count] ++;
+					storage[count] ++;
 				} else {
 					purchased[count] = purchased[count];
 						}
 	
 					}
 				}
-			
-			//	for (in x = 0; x < rows; x++) {
-				//	if (purchased[x] > 0) {
-			//			cusBought[x] = customers- c;}
-			//	}
+			for (int n = 0; n < rows; n++) {
+				if (storage[n] > 0) {
+					cusBought[n]++;
+				}
 			}
+		
+				}
+			
 		
 				for (int value = 0; value < rows; value++) {
 					if (purchased[value] > 0) {
