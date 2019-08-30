@@ -38,7 +38,7 @@ public class A1Jedi {
 				for (int count = 0; count < rows; count++) { //6 times per items bought
 				if (food.equals(groceries[count])) {
 					purchased[count] += quantity;
-					
+					cusBought[count] ++;
 				} else {
 					purchased[count] = purchased[count];
 						}
@@ -46,14 +46,18 @@ public class A1Jedi {
 					}
 				}
 			
-				for (int x = 0; x < rows; x++) {
-					if (purchased[x] > 0) {
-						cusBought[x] = customers- c;}
-				}
+			//	for (in x = 0; x < rows; x++) {
+				//	if (purchased[x] > 0) {
+			//			cusBought[x] = customers- c;}
+			//	}
 			}
 		
 				for (int value = 0; value < rows; value++) {
-			System.out.println(cusBought[value] + groceries[value] + purchased[value]);
+					if (purchased[value] > 0) {
+			System.out.println(cusBought[value]+ " " + "customers bought" + " " + purchased[value] + " " + groceries[value]);
+					} else {
+						System.out.println("No customers bought" + " " + groceries[value]);	
+					}
 					}
 			}
 	}
