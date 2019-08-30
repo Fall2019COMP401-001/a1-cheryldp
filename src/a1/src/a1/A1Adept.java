@@ -74,7 +74,7 @@ public class A1Adept {
 				}
 			}
 			String formatMost = String.format("%.2f", most);
-			String.format("%.2f", least);
+			String formatLeast = String.format("%.2f", least);
 			
 			double average = 0;
 			double sum = 0;
@@ -87,7 +87,7 @@ public class A1Adept {
 			
 			
 			System.out.println("Biggest: " + firstNames[idxMost] + " " + lastNames[idxMost] + " (" + formatMost + ")" );
-			System.out.println("Smallest: " + firstNames[idxLeast] + " " + lastNames[idxLeast] + " (" + least + ")" );
+			System.out.println("Smallest: " + firstNames[idxLeast] + " " + lastNames[idxLeast] + " (" + formatLeast + ")" );
 			System.out.println("Average: " + avg);
 }
 }
